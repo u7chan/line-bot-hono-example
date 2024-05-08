@@ -1,11 +1,16 @@
 To install dependencies:
 ```sh
-bun install
+bun i
 ```
 
 To run:
 ```sh
-bun run dev
+bun dev
+```
+
+To lint:
+```sh
+bun lint
 ```
 
 open http://localhost:3000
