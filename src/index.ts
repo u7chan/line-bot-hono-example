@@ -20,7 +20,7 @@ app.post("/api/webhook", async (c) => {
 		return c.text("Bad Request");
 	}
 	const data = await c.req.json();
-	console.log("#contentType", data);
+	console.log("#data", data);
 	return c.text("OK");
 });
 
