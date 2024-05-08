@@ -1,0 +1,6 @@
+{
+  "name": "dev",
+  "dockerComposeFile": "../docker-compose.dev.yml",
+  "service": "playground",
+  "workspaceFolder": "/workspace"
+}
