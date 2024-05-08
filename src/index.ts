@@ -13,4 +13,15 @@ app.get("/api/json_example", (c) => {
 	});
 });
 
+app.post("/api/webhook", async (c) => {
+	const contentType = c.req.header("Content-Type");
+	if (contentType !== "application/json") {
+		c.status(400);
+		return c.text("Bad Request");
+	}
+	const data = await c.req.json();
+	console.log("#", data);
+	return c.text("OK");
+});
+
 export default app;
