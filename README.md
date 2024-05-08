@@ -8,9 +8,9 @@ To run:
 bun dev
 ```
 
-To lint:
+To check(lint and apply format):
 ```sh
-bun lint
+bun check
 ```
 
 open http://localhost:3000
