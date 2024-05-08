@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y \
     openssh-client \
     zip \
     locales \
+    && npm i -g bun \
     && localedef -f UTF-8 -i ja_JP ja_JP.UTF-8 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* 
