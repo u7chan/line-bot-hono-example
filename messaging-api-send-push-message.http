@@ -1,0 +1,20 @@
+# LINE Developer > チャネル > Messaging API設定 > チャネルアクセストークン（長期）
+@access_token = ...
+
+# LINEプラットフォームから呼ばれるWebhookのリクエストBodyから取得する
+@user_id = ...
+
+### send-push-message
+POST https://api.line.me/v2/bot/message/push
+Content-Type: application/json
+Authorization: Bearer {{ access_token }}
+
+{
+    "to": "{{ user_id }}",
+    "messages": [
+        {
+          "type": "text",
+          "text": "これはメッセージ送信です"
+        }
+    ]
+}
