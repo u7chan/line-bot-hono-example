@@ -7,7 +7,8 @@
     "vscode": {
       "extensions": [
         "biomejs.biome",
-        "eamodio.gitlens"
+        "eamodio.gitlens",
+        "humao.rest-client"
       ]
     }
   }

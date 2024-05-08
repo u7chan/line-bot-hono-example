@@ -1,0 +1,20 @@
+# LINE Developer > チャネル > Messaging API設定 > チャネルアクセストークン（長期）
+@access_token = ...
+
+# LINEプラットフォームから呼ばれるWebhookのリクエストBodyから取得する
+@reply_token = ...
+
+### reply message
+POST https://api.line.me/v2/bot/message/reply
+Content-Type: application/json
+Authorization: Bearer {{ access_token }}
+
+{
+    "replyToken": "{{ reply_token }}",
+    "messages": [
+        {
+          "type": "text",
+          "text": "Hello, これは自動リプライです"
+        }
+    ]
+}
