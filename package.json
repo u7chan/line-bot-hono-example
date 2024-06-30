@@ -4,7 +4,8 @@
     "lint": "bunx @biomejs/biome check src"
   },
   "dependencies": {
-    "hono": "^4.4.10"
+    "hono": "^4.4.10",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
