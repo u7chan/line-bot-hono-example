@@ -4,10 +4,10 @@
     "check": "bunx @biomejs/biome check --apply ./src"
   },
   "dependencies": {
-    "hono": "^4.3.3"
+    "hono": "^4.4.10"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.7.3",
+    "@biomejs/biome": "^1.8.3",
     "@types/bun": "latest"
   }
 }
