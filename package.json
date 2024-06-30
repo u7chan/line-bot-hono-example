@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev": "bun run --hot src/index.ts",
-    "check": "bunx @biomejs/biome check --apply ./src"
+    "lint": "bunx @biomejs/biome check src"
   },
   "dependencies": {
     "hono": "^4.4.10"
