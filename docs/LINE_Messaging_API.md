@@ -4,7 +4,7 @@
 
 ### 検証ボタン押下時のリクエストパラメーター
 
-```json
+```yaml
 {
   destination: "U12z3456zz78901zzzzzzz2z3z4567890", // IDはダミー (※全て同じID)
   events: [],
@@ -13,7 +13,7 @@
 
 ### ユーザーが公式アカウントを追加やブロックを解除した時
 
-```json
+```yaml
 {
   destination: "U12z3456zz78901zzzzzzz2z3z4567890", // IDはダミー (※全て同じID)
   events: [
@@ -40,7 +40,7 @@
 
 ### ユーザーが公式アカウントをブロックした時
 
-```json
+```yaml
 {
   destination: "U12z3456zz78901zzzzzzz2z3z4567890", // IDはダミー (※全て同じID)
   events: [
@@ -65,7 +65,7 @@
 
 入力内容: `test@example.com`
 
-```json
+```yaml
 {
   destination: "U12z3456zz78901zzzzzzz2z3z4567890", // IDはダミー (※全て同じID)
   events: [
