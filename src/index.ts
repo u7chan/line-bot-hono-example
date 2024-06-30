@@ -17,11 +17,16 @@ app.post('/api/webhook', async (c) => {
   const contentType = c.req.header('Content-Type')
   if (!contentType?.includes('application/json')) {
     c.status(400)
-    return c.text('Bad Request')
+    return c.text('Bad Request(1)')
   }
-  const data = await c.req.json()
-  console.log('#data', data)
-  return c.text('OK')
+  try {
+    const data = await c.req.json()
+    console.log('#data', data)
+    return c.text('OK')
+  } catch {
+    c.status(400)
+    return c.text('Bad Request(2)')
+  }
 })
 
 export default app

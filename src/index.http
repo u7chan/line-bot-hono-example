@@ -1,0 +1,15 @@
+#### health check
+GET http://localhost:3000/api/health_check
+
+#### JSON example
+GET http://localhost:3000/api/json_example
+
+#### webhook
+POST http://localhost:3000/api/webhook
+Content-Type: application/json
+
+{
+  "id": "{{$guid}}",
+  "message": "test",
+  "timestamp": "{{$timestamp}}"
+}
