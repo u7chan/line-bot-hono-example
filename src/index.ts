@@ -7,7 +7,7 @@ app.get('/api/health_check', (c) => {
   return c.text('OK')
 })
 
-app.get('/api/json_example', (c) => {
+app.get('/api/json_response', (c) => {
   return c.json({
     ok: true,
     message: 'Hello Hono!',
