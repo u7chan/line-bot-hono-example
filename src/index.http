@@ -5,11 +5,10 @@ GET http://localhost:3000/api/health_check
 GET http://localhost:3000/api/json_example
 
 #### webhook
-POST http://localhost:3000/api/webhook
+POST http://localhost:3000/api/line/webhook
 Content-Type: application/json
 
 {
-  "id": "{{$guid}}",
-  "message": "test",
-  "timestamp": "{{$timestamp}}"
+  "destination": "{{$guid}}",
+  "events": []
 }
