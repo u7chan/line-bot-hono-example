@@ -87,7 +87,7 @@ app.post('/api/line/webhook', async (c) => {
     }
     if (replyMessage) {
       const url = 'https://api.line.me/v2/bot/message/reply'
-      const res = await app.request(url, {
+      const res = await fetch(url, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
